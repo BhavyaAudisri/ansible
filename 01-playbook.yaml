@@ -1,5 +1,18 @@
-- name: ping
-  hosts: node
-  tasks:
-    -name: ping the server
+- name: PING
+  hosts: list
+  tasks: # task=module=collection
+  - name: ping the server
     ansible.builtin.ping:
+- name: install and run nginx
+  hosts: list
+  become: yes # -b
+  tasks:
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+  - name: start the nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes 
