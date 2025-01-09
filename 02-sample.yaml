@@ -1,5 +1,5 @@
 - name: PING
-  hosts: 18.207.217.113
+  host: 18.207.217.113
   conection: local
   tasks:
     - name: ping the server
