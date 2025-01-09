@@ -3,8 +3,10 @@
   tasks: # task=module=collection
   - name: ping the server
     ansible.builtin.ping:
-  - name: install and run nginx
-    become: yes # -b
+- name: install and run nginx
+  hosts: list
+  become: yes # -b
+  tasks:
   - name: install nginx
     ansible.builtin.package:
       name: nginx
