@@ -1,4 +1,4 @@
-- name: ping
+- name: PING
   hosts: localhost
   conection: local
   tasks:
