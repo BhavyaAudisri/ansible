@@ -3,10 +3,10 @@
   connection: local
   vars:
     my_number: 15
-  vars_prompt:
-  - name: my_number
-    prompt: enter the number
-    private: false
+  # vars_prompt:
+  # - name: my_number
+  #   prompt: enter the number
+  #   private: false
   tasks:
   - name: print if number greater than 10
     ansible.builtin.debug:
