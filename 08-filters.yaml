@@ -1,5 +1,5 @@
 - name: filters
-  hosts: local
+  hosts: list
   connection: local
   tasks:
   - name: handle undefine variable
