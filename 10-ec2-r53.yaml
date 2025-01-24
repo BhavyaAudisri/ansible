@@ -12,11 +12,11 @@
 
   - name: create ec2 server
     amazon.aws.ec2_instance:
-      name: "linux-practice"
+      name: " linux-practice "
       key_name: default
       vpc_subnet_id: default
       instance_type: t3.micro
-      security_group: " linux-practice "
+      security_group: sg-066e27bb17fec988b
       network_interfaces:
-      assign_public_ip: true
+      - assign_public_ip: true
       image_id: ami-09c813fb71547fc4f
