@@ -10,13 +10,13 @@
     - boto3
     - botocore
 
-  - name: create ec2 server
-    amazon.aws.ec2_instance:
-      name: " linux-practice "
-      key_name: default
-      vpc_subnet_id: default
-      instance_type: t3.micro
-      security_group: " linux-practice "
-      network_interfaces:
-      assign_public_ip: true
-      image_id: ami-09c813fb71547fc4f
+  # - name: create ec2 server
+  #   amazon.aws.ec2_instance:
+  #     name: "linux-practice"
+  #     key_name: default
+  #     vpc_subnet_id: default
+  #     instance_type: t3.micro
+  #     security_group: " linux-practice "
+  #     network_interfaces:
+  #     assign_public_ip: true
+  #     image_id: ami-09c813fb71547fc4f
