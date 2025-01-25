@@ -31,8 +31,8 @@
     register: ec2_info 
 
   - name: print instance info
-    # tags:
-    #   - print
+    tags:
+      - print
     ansible.builtin.debug:
       msg: "{{ ec2_info }}"   
 
