@@ -34,8 +34,8 @@
   - name: print ec2_info
     tags:
       - print
-    ansible.builtin.command:
-      echo -e " $ec2_info " 
+    ansible.builtin.debug:
+      msg: "{{ $ec2_info }} " 
       # &>>/var/log/instance_log       
 
   # - name: print private IP addresses
