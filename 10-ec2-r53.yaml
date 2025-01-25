@@ -32,10 +32,11 @@
     register: ec2_info 
 
   - name: print ec2_info
+    tags:
+      - print
     ansible.builtin.command:
       echo -e " $ec2_info " &>>$instance_info
-      tags:
-      - print
+      
 
   # - name: print private IP addresses
   #   ansible.builtin.debug:
