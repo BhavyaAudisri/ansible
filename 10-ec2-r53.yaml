@@ -32,7 +32,7 @@
 
   - name: print instance info
     tags:
-      - print
+    - print
     ansible.builtin.debug:
       msg: "{{ ec2_info }}"   
 
