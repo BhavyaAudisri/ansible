@@ -32,9 +32,8 @@
     register: ec2_info 
 
   - name: print ec2_info
-    ansible.builtin.debug:
-    community.general.log_plays:
-      msg: "{{ ec2_info }}" &>>{{ instance_info }}
+    ansible.builtin.command:
+      echo -e " $ec2_info " &>>$instance_info
 
   # - name: print private IP addresses
   #   ansible.builtin.debug:
