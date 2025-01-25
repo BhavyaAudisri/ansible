@@ -7,7 +7,7 @@
     ami_id: ami-09c813fb71547fc4f
     instance_type: t3.micro
     zone: us-east-1
-    instance_info: /e/devops/repos/instance_res/instance_res.log
+    instance_info: /var/log/instance_log/instance_info.log
     instances:
     - mysql
     - backend
