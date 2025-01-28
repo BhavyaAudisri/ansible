@@ -1,6 +1,6 @@
 - name: nginx installation
   #hosts: all
-  hosts: linux-practice
+  hosts: demo
   become: yes
   serial: 10
   tasks:
